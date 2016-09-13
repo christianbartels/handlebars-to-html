@@ -10,8 +10,8 @@ program.version(packageJson.version)
     .usage("-t <path> -T <pattern> -p [path] -P [pattern] -d <directory>")
     .description("Write handlebars templates to a directory as static html.")
     .option("-d, --directory <path>", "output directory")
-    .option("-P, --partial-directory [path]", "directory to prepend to pattern")
-    .option("-p, --partial-pattern [pattern]", "glob pattern to match partial files")
+    .option("-P, --partial-directory <path>", "directory to prepend to pattern")
+    .option("-p, --partial-pattern <pattern>", "glob pattern to match partial files")
     .option("-T, --template-directory <path>", "directory to prepend to pattern")
     .option("-t, --template-pattern <path>", "glob pattern to match template files in template path")
     .option("-v, --verbose", "output more information to console")
@@ -26,7 +26,7 @@ if (program.partialDirectory && program.partialPattern) {
 } else if (program.partialDirectory && !program.partialPattern) {
     console.error('  Supplied partial directory with no pattern');
 } else if (!program.partialDirectory && program.partialPattern) {
-    console.error('  Supplied partial patern with no directory');
+    console.error('  Supplied partial pattern with no directory');
 }
 
 if (program.templateDirectory && program.templatePattern && program.directory) {

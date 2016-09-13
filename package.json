@@ -1,6 +1,6 @@
 {
   "name": "handlebars-to-html",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate static html files from handlebars templates.",
   "main": "dist/handlebars-to-html.js",
   "bin": "dist/index.js",
@@ -20,7 +20,7 @@
   "pre-commit": "check",
   "repository": {
     "type": "git",
-    "url": "git+https://cdierkens@github.com/cdierkens/handlebars-to-html.git"
+    "url": "git+https://christianbartels@github.com/christianbartels/handlebars-to-html.git"
   },
   "keywords": [
     "handlebars",
@@ -28,12 +28,12 @@
     "templates",
     "partials"
   ],
-  "author": "Christopher Dierkens <cjdierkens@gmail.com>",
+  "author": "Christian Bartels <c.bartels@bequadrat.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cdierkens/handlebars-to-html/issues"
+    "url": "https://github.com/christianbartels/handlebars-to-html/issues"
   },
-  "homepage": "https://github.com/cdierkens/handlebars-to-html#readme",
+  "homepage": "https://github.com/christianbartels/handlebars-to-html#readme",
   "dependencies": {
     "commander": "^2.9.0",
     "glob": "^7.0.0",

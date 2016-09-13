@@ -8,7 +8,7 @@ function fileContents (file) {
     return fs.readFileSync(file).toString()
 }
 
-function files (directory) {
+function files (directory, pattern) {
     var files = glob.sync(path.join(directory, pattern));
 
     if (process.env.debug) {
@@ -29,7 +29,7 @@ function relativePath (file, directory, extension = "") {
     return file.replace(directory, "").replace(path.extname(file), extension);
 }
 
-function templatePath (file, directory, extension = "html") {
+function templatePath (file, directory, extension = ".html") {
     return relativePath(file, directory, extension);
 }
 
